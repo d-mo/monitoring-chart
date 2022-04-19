@@ -1,0 +1,9 @@
+dependencies:
+- name: ingress-nginx
+  repository: https://kubernetes.github.io/ingress-nginx
+  version: 4.0.19
+- name: prometheus-node-exporter
+  repository: https://prometheus-community.github.io/helm-charts
+  version: 3.1.1
+digest: sha256:5bf5c6576a400554eb2f1857c9126c30272dd7e633e8ad6997ce27e3ca48a40a
+generated: "2022-04-20T01:50:19.483507086+03:00"
