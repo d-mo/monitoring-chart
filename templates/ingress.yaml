@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ values.ingress.name }}
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: node-exporter-prometheus-node-exporter
+            port:
+              number: 9100
+  ingressClassName: nginx
