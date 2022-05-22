@@ -10,7 +10,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 1.1.3
-    created: "2022-05-22T20:33:04.138798835+03:00"
+    created: "2022-05-22T20:57:27.143066758+03:00"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
     digest: c88cd366881c53ca239aaa8ef752c71117e85d0051e8da5981c30f36c3c15a2a
@@ -29,12 +29,12 @@ entries:
     - https://github.com/kubernetes/ingress-nginx
     type: application
     urls:
-    - https://d-mo.github.com/monitoring-chart/charts/ingress-nginx-4.0.19.tgz
+    - https://d-mo.github.io/monitoring-chart/charts/ingress-nginx-4.0.19.tgz
     version: 4.0.19
   monitoring:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-05-22T20:33:04.135393323+03:00"
+    created: "2022-05-22T20:57:27.135397546+03:00"
     dependencies:
     - name: ingress-nginx
       repository: https://kubernetes.github.io/ingress-nginx
@@ -47,11 +47,11 @@ entries:
     name: monitoring
     type: application
     urls:
-    - https://d-mo.github.com/monitoring-chart/monitoring-0.2.0.tgz
+    - https://d-mo.github.io/monitoring-chart/monitoring-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-05-22T20:33:04.112454885+03:00"
+    created: "2022-05-22T20:57:27.107748274+03:00"
     dependencies:
     - name: ingress-nginx
       repository: https://kubernetes.github.io/ingress-nginx
@@ -64,12 +64,12 @@ entries:
     name: monitoring
     type: application
     urls:
-    - https://d-mo.github.com/monitoring-chart/monitoring-0.1.0.tgz
+    - https://d-mo.github.io/monitoring-chart/monitoring-0.1.0.tgz
     version: 0.1.0
   prometheus:
   - apiVersion: v2
     appVersion: 2.34.0
-    created: "2022-05-22T20:33:04.143492628+03:00"
+    created: "2022-05-22T20:57:27.149376285+03:00"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -97,6 +97,6 @@ entries:
     - https://github.com/kubernetes/kube-state-metrics
     type: application
     urls:
-    - https://d-mo.github.com/monitoring-chart/charts/prometheus-15.9.0.tgz
+    - https://d-mo.github.io/monitoring-chart/charts/prometheus-15.9.0.tgz
     version: 15.9.0
-generated: "2022-05-22T20:33:04.094744191+03:00"
+generated: "2022-05-22T20:57:27.087282302+03:00"
