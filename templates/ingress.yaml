@@ -10,7 +10,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: node-exporter-prometheus-node-exporter
+            name: {{ .Release.Name }}-prometheus-server
             port:
-              number: 9100
+              number: 80
   ingressClassName: nginx
